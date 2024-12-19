@@ -4,72 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Listing</title>
+    <script src="https://kit.fontawesome.com/f73f4ede16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./property.css">
 </head>
 <body>
     <main>
-       <!-- header part start -->
-       <header class="side-gap">
-        <div class="logo-name">
-              <svg  class="rotate" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#18181B"/>
-              </svg>
-          <p>Comfea</p>
+        <!-- header part start -->
+        <header  id="home" class="side-gap">
+            <div class="logo-name">
+                <svg  class="rotate" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#18181B"/>
+                </svg>
+            <p>Comfea</p>
+            </div>
+            <nav>
+            <a href="https://abalam0.github.io/assignment2/">
+                <span>Home</span>
+            </a>
+            <a href="https://abalam0.github.io/about_us/">
+                <span>About us</span>
+            </a>
+            <a href=" https://abalam0.github.io/property-page/">
+                <span>Property</span>
+            </a>
+            <a href="https://abalam0.github.io/contact-page/">
+                <span> Agent</span>
+            </a>
+            <a href="https://abalam0.github.io/blog-listing/">
+                <span>  Blog</span>
+            </a>
+            <a href=" https://abalam0.github.io/Faq-page/">
+                <span>  FAQ'S</span>
+            </a>
+            </nav>
+            <div class="contact-btn"><button>Contact Us</button></div>
+            <div class="three-dot">
+            <a href="#bar">
+                <svg   width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 9H27M5 16H27M5 23H27" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+                </a> 
+            </div>        
+        </header>
+        <!-- the following div for mobail nav -->
+        <div id="bar" class="bar">
+            <div class="logo-cross">
+                <div class="logo-name">
+                    <svg  class="rotate" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9022 10.9546C23.7074 9.45798 23.2273 7.97282 22.4368 6.57931V6.58035C19.504 1.40833 13.3061 -0.750677 7.89972 1.22294L15.614 5.15872C16.869 5.77424 17.9782 6.71679 18.7999 7.94783L20.6755 12.5704C20.6755 12.5704 19.3186 13.5542 23.9022 10.9546ZM3.94063 11.0932V11.0973C3.88023 11.441 3.84168 11.7899 3.82606 12.1399L2.93139 20.3582C2.4221 19.7698 1.96282 19.122 1.56393 18.419C-1.31162 13.349 -0.0930824 7.07406 4.16348 3.41115L7.99409 5.36602L7.96282 5.38372C5.7507 6.63872 4.34679 8.7696 3.93957 11.0942L3.94063 11.0932ZM16.2845 19.4679L23.6717 15.278C22.927 18.4045 20.9357 21.2249 17.9196 22.936C14.1942 25.0492 9.81786 24.9513 6.30597 23.0621L6.77047 18.794C9.31169 20.9051 12.9923 21.3426 16.0365 19.6168C16.1199 19.5689 16.2022 19.52 16.2834 19.47L16.2845 19.4679Z" fill="#18181B"/>
+                    </svg>
+                    <p>Comfea</p>
+                </div>
+                <div class="cross">
+                    <a href="#home">
+                       <i class="fa-solid fa-x"></i>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <a href="https://abalam0.github.io/assignment2/">
+                    <span>Home</span>
+                </a>
+                <a href="https://abalam0.github.io/about_us/">
+                    <span>About us</span>
+                </a>
+                <a href=" https://abalam0.github.io/property-page/">
+                    <span>Property</span>
+                </a>
+                <a href="https://abalam0.github.io/contact-page/">
+                <span> Agent</span>
+                </a>
+                <a href="https://abalam0.github.io/blog-listing/">
+                <span>  Blog</span>
+                </a>
+                <a href=" https://abalam0.github.io/Faq-page/">
+                <span>  FAQ'S</span>
+                </a>
+                <div class="bar-button"><button>Contact Us</button></div>
+            </nav>
         </div>
-        <nav>
-          <a href="https://abalam0.github.io/assignment2/">
-              <span>Home</span>
-          </a>
-          <a href="https://abalam0.github.io/about_us/">
-              <span>About us</span>
-          </a>
-          <a href=" https://abalam0.github.io/property-page/">
-              <span>Property</span>
-          </a>
-          <a href="https://abalam0.github.io/contact-page/">
-             <span> Agent</span>
-          </a>
-          <a href="https://abalam0.github.io/blog-listing/">
-            <span>  Blog</span>
-          </a>
-          <a href=" https://abalam0.github.io/Faq-page/">
-            <span>  FAQ'S</span>
-          </a>
-        </nav>
-        <div class="contact-btn"><button>Contact Us</button></div>
-        <svg class="three-dot"   width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 9H27M5 16H27M5 23H27" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>           
-       </header>
-       <!-- header part end -->
+        <!-- header part end -->
 
         <!--second header part start  -->
         <section class="side-gap">
-        <div class="s-header-text">
-            <div class="sh-text">
-                <h1>Explore Our Property Listings</h1>
-                <p>Discover our curated selection of properties that cater to various lifestyles and budgets. Whether you’re searching for a modern city apartment, a cozy suburban home, or an investment property, our listings have something for everyone.</p>
-            </div>
-            <div class="search-button">
-                <div class="search">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M22 22L20 20" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <input type="text" placeholder="Search Your Dream Property">                  
+            <div class="s-header-text">
+                <div class="sh-text">
+                    <h1>Explore Our Property Listings</h1>
+                    <p>Discover our curated selection of properties that cater to various lifestyles and budgets. Whether you’re searching for a modern city apartment, a cozy suburban home, or an investment property, our listings have something for everyone.</p>
                 </div>
-                <div class="slide-button">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.5 6H20.25M10.5 6C10.5 6.39782 10.342 6.77936 10.0607 7.06066C9.77936 7.34196 9.39782 7.5 9 7.5C8.60218 7.5 8.22064 7.34196 7.93934 7.06066C7.65804 6.77936 7.5 6.39782 7.5 6M10.5 6C10.5 5.60218 10.342 5.22064 10.0607 4.93934C9.77936 4.65804 9.39782 4.5 9 4.5C8.60218 4.5 8.22064 4.65804 7.93934 4.93934C7.65804 5.22064 7.5 5.60218 7.5 6M7.5 6H3.75M10.5 18H20.25M10.5 18C10.5 18.3978 10.342 18.7794 10.0607 19.0607C9.77936 19.342 9.39782 19.5 9 19.5C8.60218 19.5 8.22064 19.342 7.93934 19.0607C7.65804 18.7794 7.5 18.3978 7.5 18M10.5 18C10.5 17.6022 10.342 17.2206 10.0607 16.9393C9.77936 16.658 9.39782 16.5 9 16.5C8.60218 16.5 8.22064 16.658 7.93934 16.9393C7.65804 17.2206 7.5 17.6022 7.5 18M7.5 18H3.75M16.5 12H20.25M16.5 12C16.5 12.3978 16.342 12.7794 16.0607 13.0607C15.7794 13.342 15.3978 13.5 15 13.5C14.6022 13.5 14.2206 13.342 13.9393 13.0607C13.658 12.7794 13.5 12.3978 13.5 12M16.5 12C16.5 11.6022 16.342 11.2206 16.0607 10.9393C15.7794 10.658 15.3978 10.5 15 10.5C14.6022 10.5 14.2206 10.658 13.9393 10.9393C13.658 11.2206 13.5 11.6022 13.5 12M13.5 12H3.75" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="search-button">
+                    <div class="search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 22L20 20" stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" placeholder="Search Your Dream Property">                  
+                    </div>
+                    <div class="slide-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 6H20.25M10.5 6C10.5 6.39782 10.342 6.77936 10.0607 7.06066C9.77936 7.34196 9.39782 7.5 9 7.5C8.60218 7.5 8.22064 7.34196 7.93934 7.06066C7.65804 6.77936 7.5 6.39782 7.5 6M10.5 6C10.5 5.60218 10.342 5.22064 10.0607 4.93934C9.77936 4.65804 9.39782 4.5 9 4.5C8.60218 4.5 8.22064 4.65804 7.93934 4.93934C7.65804 5.22064 7.5 5.60218 7.5 6M7.5 6H3.75M10.5 18H20.25M10.5 18C10.5 18.3978 10.342 18.7794 10.0607 19.0607C9.77936 19.342 9.39782 19.5 9 19.5C8.60218 19.5 8.22064 19.342 7.93934 19.0607C7.65804 18.7794 7.5 18.3978 7.5 18M10.5 18C10.5 17.6022 10.342 17.2206 10.0607 16.9393C9.77936 16.658 9.39782 16.5 9 16.5C8.60218 16.5 8.22064 16.658 7.93934 16.9393C7.65804 17.2206 7.5 17.6022 7.5 18M7.5 18H3.75M16.5 12H20.25M16.5 12C16.5 12.3978 16.342 12.7794 16.0607 13.0607C15.7794 13.342 15.3978 13.5 15 13.5C14.6022 13.5 14.2206 13.342 13.9393 13.0607C13.658 12.7794 13.5 12.3978 13.5 12M16.5 12C16.5 11.6022 16.342 11.2206 16.0607 10.9393C15.7794 10.658 15.3978 10.5 15 10.5C14.6022 10.5 14.2206 10.658 13.9393 10.9393C13.658 11.2206 13.5 11.6022 13.5 12M13.5 12H3.75" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <!--second header part end  -->
 
         <!-- main contant start -->
-         <section class="side-gap">
+        <section class="side-gap">
             <div class="main-contant">
                 <div class="left-contant">
                     <div class="email-button">
@@ -142,12 +184,12 @@
                             <div class="line3"></div>
                         </div>
                         <div class="price">
-                           <div class="left-price">
+                            <div class="left-price">
                             <span>min</span> &dollar; 3,000
-                           </div>
-                           <div class="left-price">
+                            </div>
+                            <div class="left-price">
                             <span>max</span> &dollar; 7,000
-                           </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -188,9 +230,9 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                         <p>
-                                           Per Month
+                                            Per Month
                                         </p>
                                     </div>
                                 </div>
@@ -216,7 +258,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>1,500 sq ft</p>
                                     </div>
                                 </div>
@@ -256,9 +298,9 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                         <p>
-                                           Per Month
+                                            Per Month
                                         </p>
                                     </div>
                                 </div>
@@ -284,7 +326,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>1,500 sq ft</p>
                                     </div>
                                 </div>
@@ -321,9 +363,9 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                         <p>
-                                           Per Month
+                                            Per Month
                                         </p>
                                     </div>
                                 </div>
@@ -349,7 +391,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>900 sq ft</p>
                                     </div>
                                 </div>
@@ -385,7 +427,7 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                     </div>
                                 </div>
                                 <hr>
@@ -410,7 +452,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>1,500 sq ft</p>
                                     </div>
                                 </div>
@@ -447,9 +489,9 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                         <p>
-                                           Per Month
+                                            Per Month
                                         </p>
                                     </div>
                                 </div>
@@ -475,7 +517,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>2,200 sq ft</p>
                                     </div>
                                 </div>
@@ -511,7 +553,7 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                     </div>
                                 </div>
                                 <hr>
@@ -536,7 +578,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>400 sq ft</p>
                                     </div>
                                 </div>
@@ -572,9 +614,9 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                         <p>
-                                           Per Month
+                                            Per Month
                                         </p>
                                     </div>
                                 </div>
@@ -600,7 +642,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>1,000 sq ft</p>
                                     </div>
                                 </div>
@@ -636,7 +678,7 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                     </div>
                                 </div>
                                 <hr>
@@ -661,7 +703,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>1,800 sq ft</p>
                                     </div>
                                 </div>
@@ -697,7 +739,7 @@
                                         </div>
                                     </div>
                                     <div class="right-text">
-                                       <h4> &dollar;1,200</h4>
+                                        <h4> &dollar;1,200</h4>
                                     </div>
                                 </div>
                                 <hr>
@@ -722,7 +764,7 @@
                                             <path d="M17 4.5H20V7.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M7 20.5H4V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                             <path d="M17 20.5H20V17.5" stroke="#70707B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                         </svg>
+                                            </svg>
                                         <p>700 sq ft</p>
                                     </div>
                                 </div>
@@ -737,7 +779,7 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
         <!-- main contant end -->
 
                

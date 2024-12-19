@@ -1,4 +1,3 @@
-
 @import url("../Satoshi_Complete/Fonts/WEB/css/satoshi.css");
 
 
@@ -85,15 +84,15 @@ header{
     gap: 1%;
     font-size: var(--x-small3);
     font-weight: var(--font-weight2);
-    color: var(--black);
 }
 
 .logo-name p{
     padding-left: 0.5rem;
+    color: var(--black);
 }
 
 
-header nav{
+ nav{
     display: flex;
     gap: 2rem;
 }
@@ -101,7 +100,7 @@ header nav{
 header nav a{
     text-decoration: none;
     font-size: 1rem;
-    color: var(--gray-dark);
+    color: var(--gray);
     font-weight:100;
     position: relative;
     transition: color 0.8s ease ;
@@ -135,7 +134,7 @@ nav a::after{
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--white3);
+    background-color: var(--gray);
     transition: width  0.3s ease-out;
 }
 
@@ -143,7 +142,7 @@ nav a:hover::after{
     width: 100%;
 }
 
-.contact-btn button{
+header .contact-btn button{
     background-color: var(--black);
     color: var(--white);
     border: none;
@@ -157,10 +156,15 @@ nav a:hover::after{
     color: var(--white);
 }
 
-
- .three-dot{
+.three-dot{
     display: none;
 }
+
+
+.bar{
+    display: none;
+}
+
 
 /* end hover and animation */
 /* end css of header */
@@ -726,7 +730,7 @@ footer{
 }
 
 
-footer .logo-name{
+footer .logo-name p{
     color: var(--white);
 }
 
@@ -862,7 +866,15 @@ footer .right-info a:hover{
     /*  start css for mobail */
     @media only screen and (min-width: 0px) and (max-width: 575.98px){
         
+
     /* start of header */
+
+    header{
+        position: absolute;
+        top: 0;
+        transform: translate(2.6%, 0%);
+
+    }
 
     header nav{
         display: none;
@@ -874,9 +886,71 @@ footer .right-info a:hover{
     header .three-dot{
         display: block;
     }
+
+    /* start of dot bar */
+    .bar{
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -5;
+        width: 100%;
+        height: 100%;
+        padding:2rem;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #ffffff;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .bar .logo-cross{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #bar:target{
+        z-index: 5;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bar p{
+        color: var(--black);
+    }
+
+    .bar a i{
+        font-size: 1.3rem;
+        color: lightslategrey;
+    }
+    
+
+    .bar nav{
+        margin-top: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar a{
+        color: var(--black);
+    }
+
+    .bar button{
+        background-color: var(--black);
+        color: var(--white);
+        border: none;
+        padding: 0.625rem 1.125rem;
+        border-radius: 0.375rem;
+    }
+
+    /* start of dot bar */
     /* end of header */
 
     /* start of second header */
+
+    .s-header-text {
+        margin-top: 7rem;
+    }
     .sh-text {
         flex-direction: column;
         align-items: center;
@@ -1057,3 +1131,4 @@ footer .right-info a:hover{
         
         
     }
+    /*  end css for mobail */
